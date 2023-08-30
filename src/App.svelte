@@ -493,7 +493,7 @@
 <Example1 />
 
 
-<div class="box h-screen w-screen w-full flex flex-col justify-center items-center">
+<div class="box h-screen w-screen w-full flex flex-col items-center">
   <div class="w-full md:w-[35%] md:flex md:justify-center">
     {#if isMobile}
       <div class="flex flex-col space-y-4 p-3">
@@ -602,30 +602,22 @@
 
 
 <!-- This is an example component -->
-
-
-<div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-  <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-  <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
-  <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
-  <div class="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
-  <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-      <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-      <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
-  </div>
+<div class="h-screen">
 </div>
 
 
-<div class="relative">
+
+
+<!-- <div class="relative"> -->
   <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://www.stockvault.net/data/2012/10/29/137060/preview16.jpg" class="h-full w-full object-cover" />
+    <img src="https://selinerapp.tk/images/wallpaper_1.jpg" class="h-full w-full object-cover" />
     <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
-      <h2 class="text-2xl font-bold">First Section</h2>
+      <h2 class="text-2xl font-bold">첫번째 섹션</h2>
       <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
   </div>
   <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://www.stockvault.net/data/2014/10/06/163147/preview16.jpg" class="h-full w-full object-cover" />
+    <img src="https://selinerapp.tk/images/wallpaper_2.jpg" class="h-full w-full object-cover" />
 
     <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
       <h2 class="text-2xl font-bold text-white">Second Section</h2>
@@ -634,7 +626,7 @@
   </div>
 
   <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://www.stockvault.net/data/2016/03/14/187739/preview16.jpg" class="h-full w-full object-cover" />
+    <img src="https://selinerapp.tk/images/wallpaper_3.jpg" class="h-full w-full object-cover" />
 
     <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
       <h2 class="text-2xl font-bold text-white">Third Section</h2>
@@ -643,31 +635,14 @@
   </div>
 
   <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://www.stockvault.net/data/2016/03/14/187732/preview16.jpg" class="h-full w-full object-cover" />
+    <img src="https://selinerapp.tk/images/wallpaper_4.jpg" class="h-full w-full object-cover" />
 
     <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
       <h2 class="text-2xl font-bold text-white">Fourth Section</h2>
       <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
   </div>
-</div>
-
-
-
-
-
-
-<div class="flex flex-col gap-10 p-10">
-
-  <div class="group relative flex h-[220px] max-w-3xl cursor-pointer items-start gap-2 overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-2xl">
-    <img src="https://p1.pxfuel.com/preview/778/373/101/nature-landscape-rocks-formation-cave-beauty.jpg" class="h-full w-[300px] object-cover transition-all duration-300 group-hover:opacity-90" />
-    <div class="flex flex-col items-start justify-center gap-4 p-4">
-      <h2 class="text-2xl font-semibold">Card Title</h2>
-      <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      <button class="rounded-md bg-blue-600 px-5 py-2 text-white shadow-xl transition-all duration-300 hover:bg-blue-700">Button</button>
-    </div>
-  </div>
-</div>
+<!-- </div> -->
 
 
 <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12" style="background-image: url('https://picsum.photos/id/1018/1000')">
@@ -724,44 +699,15 @@
   </div>
 </div>
 
-
-
-
-
-<div class="h-screen flex items-center justify-center">
-
-  <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg">
-
-    <!-- Background Image -->
-    <img src="https://picsum.photos/seed/1840/1000/600" class="object-cover w-full h-full rounded-lg" />
-    
-    <!-- Content -->
-    <div class="absolute w-full h-full bottom-0 bg-gradient-to-r from-fuchsia-700/30 to-violet-700 rounded-lg flex flex-col items-center justify-center text-center">
-    
-        <!-- Company Logo -->
-        <img src="https://github.githubassets.com/images/modules/site/enterprise/launchpad/logos/logo-dowjones.svg" />
-
-        <!-- Quotes -->
-        <p class="text-lg px-14 text-gray-300 mt-10">
-          GitHub helps us ensure that we have our security controls baked into our pipelines all the way from the first line of code we’re writing.
-        </p>
-
-        <!-- Photo -->
-        <img src="https://picsum.photos/50/50" class="rounded-full border-2 mt-8" />
-
-        <!-- Title -->
-        <p class="text-base font-bold px-14 text-gray-300 mt-3">
-          Chief Information Security Officer
-        </p>
-
-        <p class="text-sm font-light px-14 text-gray-300 ">
-          존슨
-        </p>
-
-    </div>
-
-  </card>
-
+<div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+  <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+  <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
+  <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
+  <div class="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
+  <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+      <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" class="dark:hidden w-[272px] h-[572px]" alt="">
+      <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+  </div>
 </div>
 
 
