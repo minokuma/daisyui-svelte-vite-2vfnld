@@ -547,25 +547,26 @@
 			
     {:else}
       <div class="h-screen">
-        <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-4" >
+        <div use:reveal={{ x: -50, y: 150 }} class="md:w-full mb-4" >
         <h1
 					use:reveal={{ transition: "blur", delay: 100 }} 
-					class="text-left text-black text-5xl font-fh font-bold leading-relaxed">주문제작 디자인
+					class="text-center text-black text-5xl font-fh font-bold leading-relaxed">주문제작 디자인
 				</h1>
-				<h3
-					use:reveal={{ transition: "blur", delay: 300 }} 
-					class="text-left text-black text-5xl font-fh font-bold leading-relaxed">내가 원하는 디자인을
-				</h3>
-				<h3
-					use:reveal={{ transition: "blur", delay: 500 }} 
-					class="text-left text-black text-5xl font-fh font-bold leading-relaxed">꾸민 앱에 담아
-				</h3>
-				<h3
-					use:reveal={{ transition: "blur", delay: 700 }} 
-					class="text-left text-black text-5xl font-fh font-bold leading-relaxed">쉽게 공유할 수 있어요.
-				</h3>
+				<p
+          use:reveal={{ transition: "blur", delay: 300 }} 
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">내가 원하는 디자인을
+        </p>
+        <p
+          use:reveal={{ transition: "blur", delay: 500 }} 
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">꾸민 앱에 담아
+        </p>
+        <p
+          use:reveal={{ transition: "blur", delay: 700 }} 
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">쉽게 공유할 수 있어요.
+        </p>
+
       </div>
-      <div class='flex flex-row'>
+      <div class='flex flex-row space-x-4'>
         <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
           <div class='max-w-[300px] mx-auto'>
             <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
@@ -577,6 +578,7 @@
             </div>
           </div>
         </div>
+        <div class='p-10'/>
         <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
           <div class='max-w-[300px] mx-auto'>
             <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
@@ -588,6 +590,7 @@
             </div>
           </div>
         </div>
+        <div class='p-10'/>
         <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
           <div class='max-w-[300px] mx-auto'>
             <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360"></div>

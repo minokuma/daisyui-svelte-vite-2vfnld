@@ -605,8 +605,8 @@
 			<p use:reveal={{ transition: "blur", delay: 700 }} 
 				class="text-xl text-center text-gray-200 text-5xl font-fh font-bold leading-normal mt-1">쉽게 공유할 수 있어요.
 			</p>
-      <div use:reveal={{ x: -10, y: 150 }} class="md:w-full transform rotate-90 transform-origin-center">
-        <img class="max-w-full h-auto max-w-[65%]" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEWpzF%2FbtqGfMB0vZl%2FkqkwUwBXr2XyCQjNICA4x1%2Fimg.png"  />
+      <div use:reveal={{ x: -10, y: 150 }} class="md:w-full transform -rotate-90 transform-origin-center">
+        <img class="max-w-full h-auto max-w-[63%]" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEWpzF%2FbtqGfMB0vZl%2FkqkwUwBXr2XyCQjNICA4x1%2Fimg.png"  />
       </div>
 			
     {:else}
