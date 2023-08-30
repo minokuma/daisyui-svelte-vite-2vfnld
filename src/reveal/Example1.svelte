@@ -1,6 +1,6 @@
 <script>
 
-  import { theme } from '../stores/stores.js';
+  // import { user } from '../stores/stores.js';
 
 	import { reveal } from 'svelte-reveal';
 	import Label from './Label.svelte';
