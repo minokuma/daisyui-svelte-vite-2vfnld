@@ -590,10 +590,6 @@
   </div>
 </div>
 
-
-
-
-
 <div class="box h-screen w-screen w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col justify-center items-center">
   <div class="w-full md:w-[55%] md:flex md:justify-center">
     {#if isMobile}

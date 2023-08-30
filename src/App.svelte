@@ -492,8 +492,11 @@
 
 <Example1 />
 
-{#if isMobile }
-  <div class="flex flex-col space-y-4 p-3">
+
+<div class="box h-screen w-screen w-full flex flex-col justify-center items-center">
+  <div class="w-full md:w-[65%] md:flex md:justify-center">
+    {#if isMobile}
+      <div class="flex flex-col space-y-4 p-3">
       <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
         <div class='max-w-md mx-auto'>
           <!-- <img src="https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=" alt=""> -->
@@ -541,8 +544,9 @@
         </div>
       </div>
     </div>
-{:else}
-  <div class="flex flex-row space-y-2">
+			
+    {:else}
+			<div class="flex flex-row space-y-2">
       <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
         <div class='max-w-md mx-auto'>
           <!-- <img src="https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=" alt=""> -->
@@ -590,7 +594,9 @@
         </div>
       </div>
     </div>
-{/if}
+    {/if}
+  </div>
+</div>
 
 
 
