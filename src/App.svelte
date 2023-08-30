@@ -12,6 +12,7 @@
 
   const toggleDisplayMode = () => {
     $isDarkMode = !$isDarkMode;
+    alert();
   }
 
   let isToggled = false;
@@ -333,17 +334,18 @@
           <img class="h-8 inline" src="https://www.ggumin.me/images/logo-b.png" alt="" >
         </span>    
     </NavbarBrand>
-    <!-- <button on:click={onIncre}>+</button>
+    <button on:click={onIncre}>+</button>
     <button on:click={onDecre}>-</button>
-    <h1>현재 count는 {$count} 입니다.</h1> -->
-    <h1>현재 count는 {$isDarkMode} 입니다.</h1>
+    <h1>현재 count는 {$count} 입니다.</h1>
     <!-- 버튼 -->
     <Button
       outline
-      active={!isDarkMode}
-      on:click={toggleDisplayMode}
+      active={theme === 'light'}
+      on:click={() => (
+        theme = theme === 'light' ? 'dark' : 'light'
+      )}
     >
-      <Icon name={isDarkMode ? "moon-stars-fill": "sun-fill" }  />
+      <Icon name={theme === 'light' ? "moon-stars-fill": "sun-fill" }  />
     </Button>
 
     <NavbarToggler on:click={() => (isOpen = !isOpen)} />
