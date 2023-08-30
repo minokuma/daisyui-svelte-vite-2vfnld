@@ -614,7 +614,7 @@
 
 
 <!-- <div class="relative"> -->
-  <!-- <div class="sticky top-0 flex h-screen items-center justify-center">
+  <div class="sticky top-0 flex h-screen items-center justify-center">
     <img src="https://selinerapp.tk/images/wallpaper_1.jpg" class="h-full w-full object-cover" />
     <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
       <h2 class="text-2xl font-bold">첫번째 섹션</h2>
@@ -646,7 +646,7 @@
       <h2 class="text-2xl font-bold text-white">Fourth Section</h2>
       <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
-  </div> -->
+  </div>
 <!-- </div> -->
 
 

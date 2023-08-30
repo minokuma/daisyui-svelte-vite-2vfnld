@@ -1,4 +1,7 @@
 <script>
+
+  import { theme } from '../stores/stores.js';
+
 	import { reveal } from 'svelte-reveal';
 	import Label from './Label.svelte';
 
@@ -91,7 +94,6 @@
 		</div>
 	</div>
 </div> -->
-
 <div class="box h-screen w-screen w-full flex flex-col justify-center items-center">
   <div class="w-full md:w-[65%] md:flex md:justify-center">
     {#if isMobile}
