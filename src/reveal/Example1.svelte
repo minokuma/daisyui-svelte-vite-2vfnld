@@ -1,6 +1,7 @@
 <script>
 
   // import { user } from '../stores/stores.js';
+  import { isDarkMode } from '../stores/stores.js';
 
 	import { reveal } from 'svelte-reveal';
 	import Label from './Label.svelte';
@@ -118,14 +119,14 @@
         <!-- <img class="max-w-full h-auto w-full md:w-[100%]" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEWpzF%2FbtqGfMB0vZl%2FkqkwUwBXr2XyCQjNICA4x1%2Fimg.png" /> -->
 				<!-- 데스크탑 디바이스 스크린 시작 -->
         <div class="max-w-full h-auto w-full md:w-[100%] flex justify-center items-center h-screen">
-          <div class="bg-base-200 mockup-phone">
+          <div class="{$isDarkMode ? "bg-base-200": "bg-neutral-100" } mockup-phone">
           <div class="camera"></div>
           <div class="display">
               <div class="relative flex flex-col overflow-hidden shadow rounded-box artboard phone-3">
                   <div class="flex-grow h-full drawer">
                       <input id="mobile-drawer" type="checkbox" class="drawer-toggle">
                       <div class="flex flex-col  pt-6 items-center flex-grow h-full text-center drawer-content">
-                          <div class="navbar flex-none w-full pt-6 bg-base-200 text-neutral-content">
+                          <div class="navbar flex-none w-full pt-6 {$isDarkMode ? "bg-base-200": "bg-neutral-100" } text-neutral-content">
                               <div class="flex-none">
                                   <label for="mobile-drawer" class="btn btn-circle btn-ghost drawer-button">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
@@ -144,26 +145,30 @@
                                   </button>
                               </div>
                           </div>
-                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto bg-base-200">
+                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
                             <div class="avatar">
                                 <div class="w-32 h-32 mask mask-squircle">
                                     <img src="https://img.freepik.com/premium-photo/opulent-contemporary-futuristic-interior-in-stark-black-and-white-with-fascinating-stylish-black-furniture-and-accent-walls_872147-13299.jpg">
                                 </div>
                             </div>
-                            <div class="my-4 text-2xl font-bold">꾸린이
+                            <div class="my-4 text-2xl font-bold {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">꾸린이
                           </div>
-                          <p class="text-sm">나만의 분위기있는 꾸민 모던스타일~</p>
+                          <p class="text-sm {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">나만의 분위기있는 꾸민 모던스타일~</p>
                           <div class="mt-4 mb-10">
-                            <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button>
+                            <!-- <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button> -->
                           </div>
                           <div class="w-full tabs">
                             <a class="flex-grow tab tab-lifted"></a>
-                            <a class="tab tab-lifted tab-active">이미지 목록</a>
-                            <a class="tab tab-lifted">팔로워 목록</a>
-                            <a class="tab tab-lifted">팔로잉 목록</a>
+                            <a class="tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-black bg-white"
+                                : "text-neutral-200 bg-neutral-200" 
+                              } tab-active">이미지 목록</a>
+                            <a class="tab tab-lifted {$isDarkMode ? "text-neutral-300": "text-neutral-700 bg-neutral-200" }">팔로워 목록</a>
+                            <a class="tab tab-lifted {$isDarkMode ? "text-neutral-300": "text-neutral-700 bg-neutral-200" }">팔로잉 목록</a>
                             <a class="flex-grow tab tab-lifted"></a>
                           </div>
-                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 bg-base-100">
+                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
                             <img src="https://picsum.photos/id/1004/200/200">
                             <img src="https://picsum.photos/id/1003/200/200">
                             <img src="https://picsum.photos/id/1002/200/200">
