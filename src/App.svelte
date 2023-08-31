@@ -338,8 +338,8 @@
       <!-- 커서 포인터 영역 활성화 -->
         <span class="text-2xl font-[Poppins] cursor-pointer ">
           <!-- 인라인 처리! -->
-          <img class="h-8 inline" src="https://www.ggumin.me/images/logo-b.png" alt="" >
-        </span>    
+          <img class="h-8 inline " src="https://www.ggumin.me/images/logo-b.png" alt="" >
+        </span>
     </NavbarBrand>
     
     <!-- 버튼 -->
