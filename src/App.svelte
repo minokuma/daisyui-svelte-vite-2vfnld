@@ -1,7 +1,12 @@
 <script>
 
+  
+  // import Menu from './Menu.svelte';
+    
   import { count, isDarkMode } from './stores/stores.js';
+  import { Hamburger } from 'svelte-hamburgers';
 
+  let open;
   const onIncre = () => {
     $count = $count + 1;
   }
@@ -10,12 +15,12 @@
     $count = $count - 1;
   }
 
-  const toggleDisplayMode = () => {
+  const toggleThemeMode = () => {
     $isDarkMode = !$isDarkMode;
-    alert();
   }
 
   let isToggled = false;
+  import Icon from 'svelte-icons-pack/Icon.svelte';
 
   import {
     Collapse,
@@ -30,11 +35,10 @@
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    Button, 
-    Icon
+    Button
   } from 'sveltestrap';
   
-  let theme = 'light';
+
   let isOpen = false;
   let isNavbarOpaque = true;
 
@@ -48,8 +52,12 @@
   
   import AiOutlineMenu from "svelte-icons-pack/ai/AiOutlineMenu";
   import AiOutlineClose from "svelte-icons-pack/ai/AiOutlineClose";
-  
+  import BiSolidSun from "svelte-icons-pack/bi/BiSolidSun";
+  import BiSolidMoon from "svelte-icons-pack/bi/BiSolidMoon";
+  import BsMoonStars from "svelte-icons-pack/bs/BsMoonStars";
+
   import Divider from './reveal/Divider.svelte';
+  
   // let isMenuOpen = false;
 
   // function toggleMenu() {
@@ -141,27 +149,26 @@
   
   import Main from './Main.svelte'
 
-  let open = false
   import { reveal } from 'svelte-reveal';
   import Example1 from './reveal/Example1.svelte';
 
   // 메뉴
-  function Menu(e) {
-    // alert(e);
-    let list = document.querySelector('ul');
+  // function Menu(e) {
+  //   // alert(e);
+  //   let list = document.querySelector('ul');
 
-    e.name === 'menu' 
-      ? ( 
-        e.name = "close", 
-        list.classList.add('top-[80px]'), 
-        list.classList.add('opacity-100')
-      )
-      : ( 
-        e.name = "menu", 
-        list.classList.remove('top-[80px'),
-        list.classList.remove('opacity-100')
-      )  
-  }
+  //   e.name === 'menu' 
+  //     ? ( 
+  //       e.name = "close", 
+  //       list.classList.add('top-[80px]'), 
+  //       list.classList.add('opacity-100')
+  //     )
+  //     : ( 
+  //       e.name = "menu", 
+  //       list.classList.remove('top-[80px'),
+  //       list.classList.remove('opacity-100')
+  //     )  
+  // }
 
   let menuState = "menu";
 
@@ -314,7 +321,7 @@
 </style>
 
 
-<Styles {theme} />
+<Styles $isDarkMode ? dark: light} />
 
 <!-- <Button
   color="primary"
@@ -326,7 +333,7 @@
 </Button> -->
 
 <nav class="sticky top-0 z-50 ">
-  <Navbar color={theme === 'dark'} light expand="md" class="{theme === 'dark' ? 'backdrop-blur-sm bg-black/30 ' : 'backdrop-blur-sm bg-white/30 '} ">
+  <Navbar color={$isDarkMode} light expand="md" class="{$isDarkMode ? 'backdrop-blur-sm bg-black/80 ' : 'backdrop-blur-sm bg-white/30 '} ">
     <NavbarBrand href="/">
       <!-- 커서 포인터 영역 활성화 -->
         <span class="text-2xl font-[Poppins] cursor-pointer ">
@@ -334,36 +341,63 @@
           <img class="h-8 inline" src="https://www.ggumin.me/images/logo-b.png" alt="" >
         </span>    
     </NavbarBrand>
-    <button on:click={onIncre}>+</button>
-    <button on:click={onDecre}>-</button>
-    <h1>현재 count는 {$count} 입니다.</h1>
+    
     <!-- 버튼 -->
-    <Button
+    <!-- <Button
       outline
-      active={theme === 'light'}
+      active={$isDarkMode}
       on:click={() => (
-        theme = theme === 'light' ? 'dark' : 'light'
+        toggleThemeMode()
+        // theme = theme === 'light' ? 'dark' : 'light'
       )}
     >
-      <Icon name={theme === 'light' ? "moon-stars-fill": "sun-fill" }  />
+      <Icon name={$isDarkMode ? "moon-stars-fill": "sun-fill" }  />
+    </Button> -->
+<!--     
+    <Icon src={BiSolidSun} />
+    <Icon src={$isDarkMode ? BiSolidMoon : BiSolidSun} on:click={toggleThemeMode} />
+
+    <Icon src={BiSolidSun} on:click={toggleThemeMode} />
+     -->
+
+    <Button
+      active={$isDarkMode}
+      on:click={() => (
+        toggleThemeMode()
+        // theme = theme === 'light' ? 'dark' : 'light'
+      )}
+      color='transparent'
+    >
+      <!-- <Icon name={$isDarkMode ? "moon-stars-fill": "sun-fill" }  /> -->
+      <Icon src={$isDarkMode ? BiSolidSun : BiSolidMoon} color={$isDarkMode ? "white" : "gray"} on:click={toggleThemeMode} size=25 />
     </Button>
 
-    <NavbarToggler on:click={() => (isOpen = !isOpen)} />
-    <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
+    <!-- <NavbarToggler on:click={() => (isOpen = !isOpen)} /> -->
+
+    <Hamburger 
+      --color={$isDarkMode ? "white" : "black"} 
+      --layer-spacing=5px 
+      --layer-width=23px
+      --layer-height=2.2px
+      --hover-opacity=0.3
+      --border-radius=5px
+      bind:open on:click={() => (isOpen = !isOpen)}/>
+
+    <Collapse {isOpen} navbar expand="md"  on:update={handleUpdate}>
       <Nav class="ms-auto" navbar>
         <NavItem>
           <NavLink class="text-center"  href="#">
-            <span class="{theme === 'dark' ? 'text-gray-300': 'text-gray'}">소개</span> 
+            <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">소개</span> 
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink class="text-center"  href="#">
-            <span class="{theme === 'dark' ? 'text-gray-300': 'text-gray'}">채용</span> 
+            <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">채용</span> 
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink class="text-center"  href="#">
-            <span class="{theme === 'dark' ? 'text-gray-300': 'text-gray'}">로그인</span> 
+            <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">로그인</span> 
           </NavLink>
         </NavItem>
       </Nav>
@@ -430,37 +464,37 @@
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight}/>
 
 <Carousel
-        bind:this={carousel}
-        let:loaded
-        autoplay
-        autoplayDuration={3000}
-        autoplayProgressVisible={false}
-        arrows={false}
-        swiping={true}
-        dots={false}
-        particlesToShow={1}
-      >
-        {#each images as src, imageIndex (src)}
-         <!-- 여기 class="container" -->
-          <div class="carousel-text-container " > 
-            {#if loaded.includes(imageIndex)}
-              <img 
-                src={src.url} 
-                alt={src.description} 
-                class="img-container {theme === 'dark' ? 'opacity-50' : 'opacity-80'}"
-              />
-              <!-- <video width="100%" autoplay loop=true>
-                <source src="https://selinerapp.tk/images/simul.mp4" type="video/mp4" />
-              </video> -->
-              
-              <div class="{isMobile ? 'inset-0 flex justify-center text-3xl' : 'mx-20 text-5xl' } overlay-appbar-center ">
-              <p class="text-black-1000 text-drop-shadow" use:reveal={{ transition: "fade" }}>{@html src.text}</p>
-              </div>
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-            {/if}
+    bind:this={carousel}
+    let:loaded
+    autoplay
+    autoplayDuration={3000}
+    autoplayProgressVisible={false}
+    arrows={false}
+    swiping={true}
+    dots={false}
+    particlesToShow={1}
+  >
+    {#each images as src, imageIndex (src)}
+      <!-- 여기 class="container" -->
+      <div class="carousel-text-container " > 
+        {#if loaded.includes(imageIndex)}
+          <img 
+            src={src.url} 
+            alt={src.description} 
+            class="img-container {$isDarkMode ? 'opacity-50' : 'opacity-80'}"
+          />
+          <!-- <video width="100%" autoplay loop=true>
+            <source src="https://selinerapp.tk/images/simul.mp4" type="video/mp4" />
+          </video> -->
+          
+          <div class="{isMobile ? 'inset-0 flex justify-center text-3xl' : 'mx-20 text-5xl' } overlay-appbar-center ">
+          <p class="text-black-1000 text-drop-shadow" use:reveal={{ transition: "fade" }}>{@html src.text}</p>
           </div>
-        {/each}
-      </Carousel>
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        {/if}
+      </div>
+    {/each}
+  </Carousel>
 
 
 

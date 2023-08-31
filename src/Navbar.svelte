@@ -1,6 +1,6 @@
 <script>
 	import Logo from './Logo.svelte'
-	import Hamburger from './Hamburger.svelte'
+	// import Hamburger from './Hamburger.svelte'
 	import Menu from './Menu.svelte'
 	
 	export let sidebar = false
@@ -23,7 +23,7 @@
     {#if isMobile}
       <!-- 모바일 환경에서 보여지는 내용 -->
       <Logo/>
-      <Hamburger bind:open={sidebar}/>  
+      <!-- <Hamburger bind:open={sidebar}/>   -->
     {:else}
       <!-- 데스크탑 환경에서 보여지는 내용 -->
       <Logo/>
