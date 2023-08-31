@@ -246,9 +246,67 @@
           <!-- 데스크탑 디바이스 스크린 종료 -->
         </div>
         <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-1 px-20 relative">
-          <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
-          <div class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div class="absolute -bottom-32 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div 
+            class="
+              absolute 
+              top-3 
+              -left-70
+              w-72 
+              h-72 
+              bg-purple-300 
+              rounded-full 
+              mix-blend-multiply 
+              filter
+              blur-xl
+              opacity-70
+              animate-blob">
+          </div>
+          <div 
+            class="
+              absolute 
+              top-0
+              -right-10
+              w-72
+              h-72
+              bg-yellow-200 
+              rounded-full 
+              mix-blend-multiply 
+              filter
+              blur-xl
+              opacity-70
+              animate-blob">
+          </div>
+          <div 
+            class="
+              absolute 
+              top-60
+              left-5 
+              w-72 
+              h-72 
+              bg-pink-300 
+              rounded-full 
+              mix-blend-multiply 
+              filter 
+              blur-xl 
+              opacity-70 
+              animate-blob 
+              animation-delay-2500"
+          ></div>
+          <div class="
+            absolute 
+            -bottom-1 
+            left-80 
+            w-72 
+            h-72 
+            bg-green-300 
+            rounded-full 
+            mix-blend-multiply 
+            filter 
+            blur-xl 
+            opacity-70 
+            animate-blob 
+            animation-delay-3000"
+          ></div>
           <h1
             use:reveal={{ transition: "blur", delay: 100 }} 
             class="text-left text-black text-5xl font-fh font-bold leading-relaxed">3D 시뮬레이션
@@ -607,9 +665,67 @@
           <!-- 데스크탑 디바이스 스크린 종료 -->
         </div>
         <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-1 px-20 relative">
-          <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
-          <div class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div class="absolute -bottom-32 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div 
+            class="
+              absolute 
+              top-3 
+              -left-70
+              w-72 
+              h-72 
+              bg-purple-300 
+              rounded-full 
+              mix-blend-multiply 
+              filter
+              blur-xl
+              opacity-70
+              animate-blob">
+          </div>
+          <div 
+            class="
+              absolute 
+              top-0
+              -right-10
+              w-72
+              h-72
+              bg-yellow-200 
+              rounded-full 
+              mix-blend-multiply 
+              filter
+              blur-xl
+              opacity-70
+              animate-blob">
+          </div>
+          <div 
+            class="
+              absolute 
+              top-60
+              left-5 
+              w-72 
+              h-72 
+              bg-pink-300 
+              rounded-full 
+              mix-blend-multiply 
+              filter 
+              blur-xl 
+              opacity-70 
+              animate-blob 
+              animation-delay-2500"
+          ></div>
+          <div class="
+            absolute 
+            -bottom-1 
+            left-80 
+            w-72 
+            h-72 
+            bg-green-300 
+            rounded-full 
+            mix-blend-multiply 
+            filter 
+            blur-xl 
+            opacity-70 
+            animate-blob 
+            animation-delay-3000"
+          ></div>
           <h1
             use:reveal={{ transition: "blur", delay: 100 }} 
             class="text-left text-black text-5xl font-fh font-bold leading-relaxed">모바일 견적서
