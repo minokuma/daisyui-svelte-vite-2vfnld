@@ -491,7 +491,7 @@
           <img 
             src={src.url} 
             alt={src.description} 
-            class="img-container {$isDarkMode ? 'opacity-50' : 'opacity-80'}"
+            class="img-container {$isDarkMode ? 'opacity-100' : 'opacity-80'}"
           />
           <!-- <video width="100%" autoplay loop=true>
             <source src="https://selinerapp.tk/images/simul.mp4" type="video/mp4" />
