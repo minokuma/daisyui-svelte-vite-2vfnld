@@ -555,7 +555,7 @@
 <Example1 />
 
 <!--  -->
-<div class="sticky top-0 flex h-screen items-center justify-center">
+<div class="sticky top-0 flex  items-center justify-center">
   <div class="box w-screen w-full flex flex-col items-center bg-white">
     <div class="w-full md:w-[35%] md:flex md:justify-center">
       {#if isMobile}
@@ -615,7 +615,7 @@
         </div>
         
       {:else}
-        <div class="h-screen">
+        <div class="h-screen h-full">
           <div use:reveal={{ x: -50, y: 150 }} class="md:max-w-[100%] md:mr-2 my-20" >
             <h1
               use:reveal={{ transition: "blur", delay: 100 }} 
@@ -634,170 +634,105 @@
               class="text-center text-black text-3xl font-fh leading-relaxed my-2">모두 해결하였습니다.
             </p>
           </div>
-        <div class='flex flex-row space-x-4'>
-          <div use:reveal={{ x: -10, y: 150 }} >
-            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-              <div class='max-w-[300px] mx-auto'>
-                <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
-                <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
-                  <p class='text-[#7C7C80] font-[15px]'>
-                    디자인 1회 제작시간 대비<br/>평균 64시간 단축
-                  </p>
+          <div class='flex flex-row space-x-4'>
+            <div use:reveal={{ x: -10, y: 150 }} >
+              <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+                <div class='max-w-[300px] mx-auto'>
+                  <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
+                  <div class='p-4 sm:p-6'>
+                    <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
+                    <p class='text-[#7C7C80] font-[15px]'>
+                      디자인 1회 제작시간 대비<br/>평균 64시간 단축
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class='p-10'/>
-          <div use:reveal={{ x: -10, y: 150 }} >
-            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-              <div class='max-w-[300px] mx-auto'>
-                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
-                <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
-                  <p class='text-[#7C7C80] font-[15px]'>
-                    디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
-                  </p>
+            <div class='p-10'/>
+            <div use:reveal={{ x: -10, y: 150 }} >
+              <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+                <div class='max-w-[300px] mx-auto'>
+                  <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
+                  <div class='p-4 sm:p-6'>
+                    <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
+                    <p class='text-[#7C7C80] font-[15px]'>
+                      디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class='p-10'/>
-          <div use:reveal={{ x: -10, y: 150 }} >
-            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-              <div class='max-w-[300px] mx-auto'>
-                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360"></div>
-                <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
-                  <p class='text-[#7C7C80] font-[15px]'>
-                    3D 상담직후 계약 성사율<br/>평균 62% 증가
-                  </p>
+            <div class='p-10'/>
+            <div use:reveal={{ x: -10, y: 150 }} >
+              <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+                <div class='max-w-[300px] mx-auto'>
+                  <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360"></div>
+                  <div class='p-4 sm:p-6'>
+                    <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
+                    <p class='text-[#7C7C80] font-[15px]'>
+                      3D 상담직후 계약 성사율<br/>평균 62% 증가
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       {/if}
     </div>
-  </div>
-</div>
-<!--  -->
-<div class="sticky top-0 flex h-screen items-center justify-center">
-
-</div>
-<!--  -->
-<div class="sticky top-0 flex h-screen items-center justify-center">
-
-</div>
-
-
-
-
-<!-- This is an example component -->
-
-
-
-
-<!-- <div class="relative"> -->
-  <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://selinerapp.tk/images/wallpaper_1.jpg" class="h-full w-full object-cover" />
-    <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
-      <h2 class="text-2xl font-bold">첫번째 섹션</h2>
-      <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-    </div>
-  </div>
-  <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://selinerapp.tk/images/wallpaper_2.jpg" class="h-full w-full object-cover" />
-
-    <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
-      <h2 class="text-2xl font-bold text-white">Second Section</h2>
-      <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-    </div>
-  </div>
-
-  <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://selinerapp.tk/images/wallpaper_3.jpg" class="h-full w-full object-cover" />
-
-    <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
-      <h2 class="text-2xl font-bold text-white">Third Section</h2>
-      <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-    </div>
-  </div>
-
-  <div class="sticky top-0 flex h-screen items-center justify-center">
-    <img src="https://selinerapp.tk/images/wallpaper_4.jpg" class="h-full w-full object-cover" />
-
-    <div class="absolute left-0 right-0 m-auto flex w-2/4 flex-col items-start justify-center gap-4 p-10 backdrop-blur-xl">
-      <h2 class="text-2xl font-bold text-white">Fourth Section</h2>
-      <p class="font-sans text-lg text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-    </div>
-  </div>
-<!-- </div> -->
-
-
-<!-- <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12" style="background-image: url('https://picsum.photos/id/1018/1000')">
-  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-60 border border-gray-200" style="backdrop-filter: blur(20px);">
-      <div class="max-w-md mx-auto">
+    <!-- 푸터 시작 -->
+    <footer class="relative px-60 py-10  footer {$isDarkMode ? "bg-zinc-700": "bg-zinc-100" }">
+      <!-- <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">소개</a> 
+        <a class="link link-hover">문의</a> 
+        <a class="link link-hover">채용</a> 
+        <a class="link link-hover">언론보도</a>
+      </div>  -->
+      <div>
         <div>
-          <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg" class="h-16 sm:h-24" />
+          <p class="{$isDarkMode ? "text-zinc-200": "text-zinc-800" } text-2xl mb-4">마인스페이스(주)</p>
+          <p class="{$isDarkMode ? "text-zinc-400": "text-zinc-500" } mb-2">대표자 : 엄정현 / 사업자 등록번호 : 643-87-02688 / 광주광역시 동구 동계천로 150 i-PLEX 306</p>
+          <p class="{$isDarkMode ? "text-zinc-400": "text-zinc-500" }">통신판매신고번호 제 2023-광주동구-0110호</p>
         </div>
-        <div class="divide-y divide-gray-200">
-          <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-            <p>Tailwind CSS update bring a new powerful features.</p>
-            <ul class="list-disc space-y-2">
-              <li class="flex items-start">
-                <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-                <p class="ml-2">
-                  Customizing style and create design system
-                </p>
-              </li>
-              <li class="flex items-start">
-                <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-                <p class="ml-2">
-                  Just-In-Time : The Next Generation of Tailwind CSS
-                </p>
-              </li>
-              <li class="flex items-start">
-                <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-                <p class="ml-2">Tailwind CSS from Zero to Production</p>
-              </li>
-            </ul>
-            <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
-          </div>
-          <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-            <p>See me on <a class="font-bold text-blue-700" href="https://www.linkedin.com/in/ferdianar/"> LinkedIn </a></p>
-            <p>
-              <a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700"> Read the docs &rarr; </a>
-            </p>
-          </div>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current {$isDarkMode ? "text-zinc-400": "text-zinc-500" }">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a> 
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current {$isDarkMode ? "text-zinc-400": "text-zinc-500" }">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a> 
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current {$isDarkMode ? "text-zinc-400": "text-zinc-500" }">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
         </div>
-      </div>
-    </div>
+      </div> 
+      
+    </footer>
+    <!-- 푸터 종료 -->
   </div>
-</div> -->
+</div>
+
+
+
 <!--  -->
+<!-- <div class="sticky top-0 flex h-screen items-center justify-center">
+
+</div> -->
+
+<!--  -->
+<!-- <div class="sticky top-0 flex h-screen items-center justify-center">
+
+</div> -->
 
 
 
-
-
-
-
-
+<!-- 아이폰 목업 -->
 <!-- <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
   <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
   <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
@@ -808,43 +743,6 @@
       <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
   </div>
 </div> -->
-
-
-
-
-<footer class="p-10 footer bg-base-200 text-base-content footer-center">
-  <div class="grid grid-flow-col gap-4">
-    <a class="link link-hover">소개</a> 
-    <a class="link link-hover">문의</a> 
-    <a class="link link-hover">채용</a> 
-    <a class="link link-hover">언론보도</a>
-  </div> 
-  <div>
-    <div class="grid grid-flow-col gap-4">
-      <a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a> 
-      <a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a> 
-      <a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </div> 
-  <div>
-    <p>Copyright © 2023 - All right reserved by 마인스페이스 Industries Ltd</p>
-  </div>
-</footer>
-
-
-
 
 <!-- 시차 효과 -->
 <!-- <Parallax 
