@@ -361,17 +361,18 @@
      -->
 
     <!-- <NavbarToggler on:click={() => (isOpen = !isOpen)} /> -->
-    <Hamburger 
+    
+    {#if (isMobile)}
+      <Hamburger 
         --color={$isDarkMode ? "white" : "black"} 
         --layer-spacing=5px 
         --layer-width=23px
         --layer-height=2.2px
         --hover-opacity=0.3
         --border-radius=5px
-        bind:open on:click={() => (isOpen = !isOpen)}/>
-    <!-- {#if (isOpen)}
-      
-    {/if} -->
+        bind:open
+        on:click={() => (isOpen = !isOpen)}/>  
+    {/if}
     
     
 
