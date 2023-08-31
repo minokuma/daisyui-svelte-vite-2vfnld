@@ -554,132 +554,145 @@
 
 <Example1 />
 
-
-<div class="box  w-screen w-full flex flex-col items-center">
-  <div class="w-full md:w-[35%] md:flex md:justify-center">
-    {#if isMobile}
-      <div class="flex flex-col space-y-4 p-3">
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <!-- <img src="https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=" alt=""> -->
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
-                <!-- <div class='flex flex-row'>
-                  <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
-                  <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
-                </div> -->
-                <p class='text-[#7C7C80] font-[15px]'>
-                  디자인 1회 제작시간 대비<br/>평균 64시간 단축
-                </p>
+<!--  -->
+<div class="sticky top-0 flex h-screen items-center justify-center">
+  <div class="box w-screen w-full flex flex-col items-center bg-white">
+    <div class="w-full md:w-[35%] md:flex md:justify-center">
+      {#if isMobile}
+        <div class="flex flex-col space-y-4 p-3">
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-md mx-auto'>
+                <!-- <img src="https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=" alt=""> -->
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
+                  <!-- <div class='flex flex-row'>
+                    <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
+                    <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
+                  </div> -->
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    디자인 1회 제작시간 대비<br/>평균 64시간 단축
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-md mx-auto'>
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
+                  <!-- <div class='flex flex-row'>
+                    <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
+                    <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
+                  </div> -->
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-md mx-auto'>
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360');"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
+                  <!-- <div class='flex flex-row'>
+                    <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
+                    <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
+                  </div> -->
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    3D 상담직후 계약 성사율<br/>평균 62% 증가
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
-                <!-- <div class='flex flex-row'>
-                  <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
-                  <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
-                </div> -->
-                <p class='text-[#7C7C80] font-[15px]'>
-                  디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
-                </p>
+        
+      {:else}
+        <div class="h-screen">
+          <div use:reveal={{ x: -50, y: 150 }} class="md:max-w-[100%] md:mr-2 my-20" >
+            <h1
+              use:reveal={{ transition: "blur", delay: 100 }} 
+              class="text-center text-black text-5xl font-fh font-bold leading-relaxed">인테리어 꾸미고 싶을 땐? 꾸민~!<br/>
+            </h1>
+            <p
+              use:reveal={{ transition: "blur", delay: 300 }} 
+              class="text-center text-black text-3xl font-fh leading-relaxed my-2">고객님들께 가장 중요한
+            </p>
+            <p
+              use:reveal={{ transition: "blur", delay: 500 }} 
+              class="text-center text-black text-3xl font-fh leading-relaxed my-2">시간, 비용, 계약 퍼포먼스를
+            </p>
+            <p
+              use:reveal={{ transition: "blur", delay: 700 }} 
+              class="text-center text-black text-3xl font-fh leading-relaxed my-2">모두 해결하였습니다.
+            </p>
+          </div>
+        <div class='flex flex-row space-x-4'>
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-[300px] mx-auto'>
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    디자인 1회 제작시간 대비<br/>평균 64시간 단축
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360');"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
-                <!-- <div class='flex flex-row'>
-                  <p class='text-[#3C3C4399] text-[17px] mr-2 line-through'>MVR 700</p>
-                  <p class='text-[17px] font-bold text-[#0FB478]'>MVR 700</p>
-                </div> -->
-                <p class='text-[#7C7C80] font-[15px]'>
-                  3D 상담직후 계약 성사율<br/>평균 62% 증가
-                </p>
+          <div class='p-10'/>
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-[300px] mx-auto'>
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='p-10'/>
+          <div use:reveal={{ x: -10, y: 150 }} >
+            <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+              <div class='max-w-[300px] mx-auto'>
+                <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360"></div>
+                <div class='p-4 sm:p-6'>
+                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
+                  <p class='text-[#7C7C80] font-[15px]'>
+                    3D 상담직후 계약 성사율<br/>평균 62% 증가
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-			
-    {:else}
-      <div class="h-screen">
-        <div use:reveal={{ x: -50, y: 150 }} class="md:w-full mb-4" >
-        <h1
-					use:reveal={{ transition: "blur", delay: 100 }} 
-					class="text-center text-black text-5xl font-fh font-bold leading-relaxed">인테리어 꾸미고 싶을 땐?<br/>꾸민~!
-				</h1>
-				<p
-          use:reveal={{ transition: "blur", delay: 300 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">고객님들께 가장 중요한
-        </p>
-        <p
-          use:reveal={{ transition: "blur", delay: 500 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">시간, 비용, 계약 퍼포먼스를
-        </p>
-        <p
-          use:reveal={{ transition: "blur", delay: 700 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">모두 해결하였습니다.
-        </p>
-      </div>
-      <div class='flex flex-row space-x-4'>
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-[300px] mx-auto'>
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://media.istockphoto.com/id/1480711849/ko/%EB%B2%A1%ED%84%B0/%EC%9B%90%ED%98%95-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8C%8C%EB%9E%80%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EC%95%8C%EB%9E%8C-%EC%8B%9C%EA%B3%84%EC%9E%85%EB%8B%88%EB%8B%A4-3d-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%9E%89%ED%81%AC-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%88%98%EB%A9%B4-%ED%83%80%EC%9D%B4%EB%A8%B8%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EB%85%90-3d-%EC%8B%9C%EA%B3%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0%EB%8A%94-%EA%B2%A9%EB%A6%AC%EB%90%9C-%ED%8C%8C%EB%9E%80%EC%83%89%EC%9C%BC%EB%A1%9C-%EB%A0%8C%EB%8D%94%EB%A7%81%EB%90%A9%EB%8B%88%EB%8B%A4.jpg?s=612x612&w=0&k=20&c=NbGpFHLMiNgzIesdKjXky46tMmNo-zC_R8OOhcIYhOs=');"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>타임 퍼포먼스</p>
-                <p class='text-[#7C7C80] font-[15px]'>
-                  디자인 1회 제작시간 대비<br/>평균 64시간 단축
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='p-10'/>
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-[300px] mx-auto'>
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1693387183~exp=1693387783~hmac=14ff71522c046b5efb3e925435804108c2c07d730adcb38559c55e85fd66075a');"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>디자이너 인건비 절약</p>
-                <p class='text-[#7C7C80] font-[15px]'>
-                  디자이너 고용인력 1인 대비<br/>평균 월 190만원 절약
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='p-10'/>
-        <div use:reveal={{ x: -10, y: 150 }} >
-          <div class='w-[300px] mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-[300px] mx-auto'>
-              <div class="bg-cover bg-center h-80" style="background-image: url('https://img.freepik.com/premium-photo/3d-render-of-roi-concept-return-on-investment-people-managing-financial-chart-profit-income_95505-341.jpg?w=360"></div>
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-700 text-[22px] leading-7 mb-3'>계약 성사 극대화</p>
-                <p class='text-[#7C7C80] font-[15px]'>
-                  3D 상담직후 계약 성사율<br/>평균 62% 증가
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/if}
     </div>
-    {/if}
   </div>
 </div>
+<!--  -->
+<div class="sticky top-0 flex h-screen items-center justify-center">
+
+</div>
+<!--  -->
+<div class="sticky top-0 flex h-screen items-center justify-center">
+
+</div>
+
+
+
 
 <!-- This is an example component -->
 
