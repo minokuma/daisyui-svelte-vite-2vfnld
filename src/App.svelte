@@ -360,31 +360,23 @@
     <Icon src={BiSolidSun} on:click={toggleThemeMode} />
      -->
 
-    <Button
-      active={$isDarkMode}
-      on:click={() => (
-        toggleThemeMode()
-        // theme = theme === 'light' ? 'dark' : 'light'
-      )}
-      color='transparent'
-    >
-      <!-- <Icon name={$isDarkMode ? "moon-stars-fill": "sun-fill" }  /> -->
-      <Icon src={$isDarkMode ? BiSolidSun : BiSolidMoon} color={$isDarkMode ? "white" : "gray"} on:click={toggleThemeMode} size=25 />
-    </Button>
-
     <!-- <NavbarToggler on:click={() => (isOpen = !isOpen)} /> -->
-
     <Hamburger 
-      --color={$isDarkMode ? "white" : "black"} 
-      --layer-spacing=5px 
-      --layer-width=23px
-      --layer-height=2.2px
-      --hover-opacity=0.3
-      --border-radius=5px
-      bind:open on:click={() => (isOpen = !isOpen)}/>
+        --color={$isDarkMode ? "white" : "black"} 
+        --layer-spacing=5px 
+        --layer-width=23px
+        --layer-height=2.2px
+        --hover-opacity=0.3
+        --border-radius=5px
+        bind:open on:click={() => (isOpen = !isOpen)}/>
+    <!-- {#if (isOpen)}
+      
+    {/if} -->
+    
+    
 
     <Collapse {isOpen} navbar expand="md"  on:update={handleUpdate}>
-      <Nav class="ms-auto" navbar>
+      <Nav class="ms-auto items-center" navbar>
         <NavItem>
           <NavLink class="text-center"  href="#">
             <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">소개</span> 
@@ -398,6 +390,23 @@
         <NavItem>
           <NavLink class="text-center"  href="#">
             <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">로그인</span> 
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink class="text-center"  href="#">
+            <span class="{$isDarkMode ? 'text-gray-300': 'text-gray'}">
+              <Button
+                active={$isDarkMode}
+                on:click={() => (
+                  toggleThemeMode()
+                  // theme = theme === 'light' ? 'dark' : 'light'
+                )}
+                color='transparent'
+              >
+                <!-- <Icon name={$isDarkMode ? "moon-stars-fill": "sun-fill" }  /> -->
+                <Icon src={$isDarkMode ? BiSolidSun : BiSolidMoon} color={$isDarkMode ? "white" : "gray"} on:click={toggleThemeMode} size=25 />
+              </Button>
+            </span> 
           </NavLink>
         </NavItem>
       </Nav>
