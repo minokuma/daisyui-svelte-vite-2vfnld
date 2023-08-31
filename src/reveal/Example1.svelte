@@ -90,7 +90,7 @@
 		</div>
 	</div>
 </div> -->
-<div class="box h-screen w-screen w-full flex flex-col justify-center items-center">
+<div class="box h-screen w-screen w-full flex flex-col justify-center items-center bg-white">
   <div class="w-full md:w-[65%] md:flex md:justify-center">
     {#if isMobile}
       <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-4">
@@ -443,7 +443,7 @@
 </div>
 
 
-<div class="box h-screen w-screen w-full flex flex-col justify-center items-center">
+<div class="box h-screen w-screen w-full flex flex-col justify-center items-center bg-white">
   <div class="w-full md:w-[65%] md:flex md:justify-center">
     {#if isMobile}
       <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-4">
@@ -624,7 +624,7 @@
   </div>
 </div>
 
-<div class="box h-screen w-screen w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col justify-center items-center">
+<div class="box h-screen w-screen w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col justify-center items-center bg-white">
   <div class="w-full md:w-[55%] md:flex md:justify-center">
     {#if isMobile}
       <div use:reveal={{ x: -50, y: 10 }} class="md:w-full mb-4">

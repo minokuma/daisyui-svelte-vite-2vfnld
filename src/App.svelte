@@ -618,19 +618,19 @@
         <div use:reveal={{ x: -50, y: 150 }} class="md:w-full mb-4" >
         <h1
 					use:reveal={{ transition: "blur", delay: 100 }} 
-					class="text-center text-black text-5xl font-fh font-bold leading-relaxed">주문제작 디자인
+					class="text-center text-black text-5xl font-fh font-bold leading-relaxed">인테리어 꾸미고 싶을 땐?<br/>꾸민~!
 				</h1>
 				<p
           use:reveal={{ transition: "blur", delay: 300 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">내가 원하는 디자인을
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">고객님들께 가장 중요한
         </p>
         <p
           use:reveal={{ transition: "blur", delay: 500 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">꾸민 앱에 담아
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">시간, 비용, 계약 퍼포먼스를
         </p>
         <p
           use:reveal={{ transition: "blur", delay: 700 }} 
-          class="text-center text-black text-3xl font-fh leading-relaxed my-2">쉽게 공유할 수 있어요.
+          class="text-center text-black text-3xl font-fh leading-relaxed my-2">모두 해결하였습니다.
         </p>
       </div>
       <div class='flex flex-row space-x-4'>
