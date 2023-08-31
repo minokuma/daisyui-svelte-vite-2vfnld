@@ -77,11 +77,6 @@
 	</div>
 </div> -->
 
-
-
-
-
-
 <!-- 카드 -->
 <!-- <div class="h-screen w-screen w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex flex-col justify-center items-center">
 	<div class="card w-96 glass">
@@ -158,15 +153,23 @@
                             <!-- <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button> -->
                           </div>
                           <div class="w-full tabs">
-                            <a class="flex-grow tab tab-lifted"></a>
-                            <a class="tab tab-lifted {
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
+                            <a class="no-underline tab tab-lifted {
                               $isDarkMode 
                                 ? "text-black bg-white"
-                                : "text-neutral-200 bg-neutral-200" 
-                              } tab-active">이미지 목록</a>
-                            <a class="tab tab-lifted {$isDarkMode ? "text-neutral-300": "text-neutral-700 bg-neutral-200" }">팔로워 목록</a>
-                            <a class="tab tab-lifted {$isDarkMode ? "text-neutral-300": "text-neutral-700 bg-neutral-200" }">팔로잉 목록</a>
-                            <a class="flex-grow tab tab-lifted"></a>
+                                : "text-neutral-200 bg-neutral-300" 
+                            } tab-active">이미지 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로워 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로잉 목록</a>
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
                           </div>
                           <div class="grid grid-cols-3 gap-2 p-2 pt-4 {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
                             <img class="rounded-md" src="https://picsum.photos/id/1004/200/200">
@@ -186,21 +189,21 @@
                           <ul class="menu justify-center flex-none w-full px-3 horizontal ">
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                 </svg>
@@ -208,7 +211,7 @@
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
                                 </svg>
                               </a>
@@ -219,16 +222,16 @@
                           <label for="mobile-drawer" class="drawer-overlay"></label>
                           <ul class="p-7 overflow-y-auto pt-14 menu w-80 h-full bg-base-100 text-base-content">
                             <li>
-                                <a>프로필</a>
+                                <a class="no-underline">프로필</a>
                             </li>
                             <li>
-                                <a>메세지</a>
+                                <a class="no-underline">메세지</a>
                             </li>
                             <li>
-                                <a>설정</a>
+                                <a class="no-underline">설정</a>
                             </li>
                             <li>
-                                <a>소개</a>
+                                <a class="no-underline">소개</a>
                             </li>
                           </ul>
                         </div>
@@ -307,17 +310,17 @@
 
         <!-- 데스크탑 디바이스 스크린 시작 -->
         <div class="max-w-full h-auto w-full md:w-[100%] flex justify-center items-center h-screen">
-          <div class="bg-base-200 mockup-phone">
+          <div class="{$isDarkMode ? "bg-base-200": "bg-neutral-100" } mockup-phone">
           <div class="camera"></div>
           <div class="display">
               <div class="relative flex flex-col overflow-hidden shadow rounded-box artboard phone-3">
                   <div class="flex-grow h-full drawer">
                       <input id="mobile-drawer" type="checkbox" class="drawer-toggle">
                       <div class="flex flex-col  pt-6 items-center flex-grow h-full text-center drawer-content">
-                          <div class="navbar flex-none w-full pt-6 bg-base-200 text-neutral-content">
+                          <div class="navbar flex-none w-full pt-6 {$isDarkMode ? "bg-base-200": "bg-neutral-100" } text-neutral-content">
                               <div class="flex-none">
                                   <label for="mobile-drawer" class="btn btn-circle btn-ghost drawer-button">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                                       </svg>
                                   </label>
@@ -327,64 +330,76 @@
                               </div>
                               <div class="flex-none">
                                   <button class="btn btn-circle btn-ghost">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                       </svg>
                                   </button>
                               </div>
                           </div>
-                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto bg-base-200">
+                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
                             <div class="avatar">
                                 <div class="w-32 h-32 mask mask-squircle">
                                     <img src="https://img.freepik.com/premium-photo/opulent-contemporary-futuristic-interior-in-stark-black-and-white-with-fascinating-stylish-black-furniture-and-accent-walls_872147-13299.jpg">
                                 </div>
                             </div>
-                            <div class="my-4 text-2xl font-bold">꾸린이
+                            <div class="my-4 text-2xl font-bold {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">꾸린이
                           </div>
-                          <p class="text-sm">나만의 분위기있는 꾸민 모던스타일~</p>
+                          <p class="text-sm {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">나만의 분위기있는 꾸민 모던스타일~</p>
                           <div class="mt-4 mb-10">
-                            <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button>
+                            <!-- <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button> -->
                           </div>
                           <div class="w-full tabs">
-                            <a class="flex-grow tab tab-lifted"></a>
-                            <a class="tab tab-lifted tab-active">이미지 목록</a>
-                            <a class="tab tab-lifted">팔로워 목록</a>
-                            <a class="tab tab-lifted">팔로잉 목록</a>
-                            <a class="flex-grow tab tab-lifted"></a>
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-black bg-white"
+                                : "text-neutral-200 bg-neutral-300" 
+                            } tab-active">이미지 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로워 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로잉 목록</a>
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
                           </div>
-                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 bg-base-100">
-                            <img src="https://picsum.photos/id/1004/200/200">
-                            <img src="https://picsum.photos/id/1003/200/200">
-                            <img src="https://picsum.photos/id/1002/200/200">
-                            <img src="https://picsum.photos/id/1001/200/200">
-                            <img src="https://picsum.photos/id/1000/200/200">
-                            <img src="https://picsum.photos/id/999/200/200">
-                            <img src="https://picsum.photos/id/998/200/200">
-                            <img src="https://picsum.photos/id/997/200/200">
-                            <img src="https://picsum.photos/id/996/200/200">
-                            <img src="https://picsum.photos/id/995/200/200">
-                            <img src="https://picsum.photos/id/994/200/200">
-                            <img src="https://picsum.photos/id/993/200/200">
+                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
+                            <img class="rounded-md" src="https://picsum.photos/id/1004/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1003/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1002/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1001/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1000/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/999/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/998/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/997/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/996/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/995/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/994/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/993/200/200">
                           </div>
                         </div>
                           <ul class="menu justify-center flex-none w-full px-3 horizontal ">
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                 </svg>
@@ -392,7 +407,7 @@
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
                                 </svg>
                               </a>
@@ -403,16 +418,16 @@
                           <label for="mobile-drawer" class="drawer-overlay"></label>
                           <ul class="p-7 overflow-y-auto pt-14 menu w-80 h-full bg-base-100 text-base-content">
                             <li>
-                                <a>프로필</a>
+                                <a class="no-underline">프로필</a>
                             </li>
                             <li>
-                                <a>메세지</a>
+                                <a class="no-underline">메세지</a>
                             </li>
                             <li>
-                                <a>설정</a>
+                                <a class="no-underline">설정</a>
                             </li>
                             <li>
-                                <a>소개</a>
+                                <a class="no-underline">소개</a>
                             </li>
                           </ul>
                         </div>
@@ -455,17 +470,17 @@
         <!-- <img class="max-w-full h-auto w-full md:w-[100%]" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEWpzF%2FbtqGfMB0vZl%2FkqkwUwBXr2XyCQjNICA4x1%2Fimg.png" /> -->
 				<!-- 데스크탑 디바이스 스크린 시작 -->
         <div class="max-w-full h-auto w-full md:w-[100%] flex justify-center items-center h-screen">
-          <div class="bg-base-200 mockup-phone">
+          <div class="{$isDarkMode ? "bg-base-200": "bg-neutral-100" } mockup-phone">
           <div class="camera"></div>
           <div class="display">
               <div class="relative flex flex-col overflow-hidden shadow rounded-box artboard phone-3">
                   <div class="flex-grow h-full drawer">
                       <input id="mobile-drawer" type="checkbox" class="drawer-toggle">
                       <div class="flex flex-col  pt-6 items-center flex-grow h-full text-center drawer-content">
-                          <div class="navbar flex-none w-full pt-6 bg-base-200 text-neutral-content">
+                          <div class="navbar flex-none w-full pt-6 {$isDarkMode ? "bg-base-200": "bg-neutral-100" } text-neutral-content">
                               <div class="flex-none">
                                   <label for="mobile-drawer" class="btn btn-circle btn-ghost drawer-button">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                                       </svg>
                                   </label>
@@ -475,64 +490,76 @@
                               </div>
                               <div class="flex-none">
                                   <button class="btn btn-circle btn-ghost">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                       </svg>
                                   </button>
                               </div>
                           </div>
-                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto bg-base-200">
+                          <div class="flex flex-col items-center flex-1 w-full h-full pt-10 overflow-y-auto {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
                             <div class="avatar">
                                 <div class="w-32 h-32 mask mask-squircle">
                                     <img src="https://img.freepik.com/premium-photo/opulent-contemporary-futuristic-interior-in-stark-black-and-white-with-fascinating-stylish-black-furniture-and-accent-walls_872147-13299.jpg">
                                 </div>
                             </div>
-                            <div class="my-4 text-2xl font-bold">꾸린이
+                            <div class="my-4 text-2xl font-bold {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">꾸린이
                           </div>
-                          <p class="text-sm">나만의 분위기있는 꾸민 모던스타일~</p>
+                          <p class="text-sm {$isDarkMode ? "text-neutral-300": "text-neutral-700" }">나만의 분위기있는 꾸민 모던스타일~</p>
                           <div class="mt-4 mb-10">
-                            <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button>
+                            <!-- <button class="btn btn btn-secondary btn-sm mt-4">친구등록</button> -->
                           </div>
                           <div class="w-full tabs">
-                            <a class="flex-grow tab tab-lifted"></a>
-                            <a class="tab tab-lifted tab-active">이미지 목록</a>
-                            <a class="tab tab-lifted">팔로워 목록</a>
-                            <a class="tab tab-lifted">팔로잉 목록</a>
-                            <a class="flex-grow tab tab-lifted"></a>
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-black bg-white"
+                                : "text-neutral-200 bg-neutral-300" 
+                            } tab-active">이미지 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로워 목록</a>
+                            <a class="no-underline tab tab-lifted {
+                              $isDarkMode 
+                                ? "text-neutral-300 bg-neutral-600"
+                                : "text-neutral-700 bg-neutral-200" 
+                            }">팔로잉 목록</a>
+                            <a class="no-underline flex-grow tab tab-lifted"></a>
                           </div>
-                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 bg-base-100">
-                            <img src="https://picsum.photos/id/1004/200/200">
-                            <img src="https://picsum.photos/id/1003/200/200">
-                            <img src="https://picsum.photos/id/1002/200/200">
-                            <img src="https://picsum.photos/id/1001/200/200">
-                            <img src="https://picsum.photos/id/1000/200/200">
-                            <img src="https://picsum.photos/id/999/200/200">
-                            <img src="https://picsum.photos/id/998/200/200">
-                            <img src="https://picsum.photos/id/997/200/200">
-                            <img src="https://picsum.photos/id/996/200/200">
-                            <img src="https://picsum.photos/id/995/200/200">
-                            <img src="https://picsum.photos/id/994/200/200">
-                            <img src="https://picsum.photos/id/993/200/200">
+                          <div class="grid grid-cols-3 gap-2 p-2 pt-4 {$isDarkMode ? "bg-base-200": "bg-neutral-100" }">
+                            <img class="rounded-md" src="https://picsum.photos/id/1004/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1003/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1002/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1001/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/1000/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/999/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/998/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/997/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/996/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/995/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/994/200/200">
+                            <img class="rounded-md" src="https://picsum.photos/id/993/200/200">
                           </div>
                         </div>
                           <ul class="menu justify-center flex-none w-full px-3 horizontal ">
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                                 </svg>
                               </a>
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                 </svg>
@@ -540,7 +567,7 @@
                             </li>
                             <li>
                               <a>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current {$isDarkMode ? "text-neutral-100": "text-base-200" }">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
                                 </svg>
                               </a>
@@ -551,16 +578,16 @@
                           <label for="mobile-drawer" class="drawer-overlay"></label>
                           <ul class="p-7 overflow-y-auto pt-14 menu w-80 h-full bg-base-100 text-base-content">
                             <li>
-                                <a>프로필</a>
+                                <a class="no-underline">프로필</a>
                             </li>
                             <li>
-                                <a>메세지</a>
+                                <a class="no-underline">메세지</a>
                             </li>
                             <li>
-                                <a>설정</a>
+                                <a class="no-underline">설정</a>
                             </li>
                             <li>
-                                <a>소개</a>
+                                <a class="no-underline">소개</a>
                             </li>
                           </ul>
                         </div>
